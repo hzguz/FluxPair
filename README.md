@@ -1,6 +1,6 @@
-# MuraPair
+# FluxPair
 
-MuraPair is a currency converter application designed with a focus on visual aesthetics and user experience. It allows users to convert between multiple fiat and crypto currencies using real-time exchange rates.
+FluxPair is a currency converter application designed with a focus on visual aesthetics and user experience. It allows users to convert between multiple fiat and crypto currencies using real-time exchange rates.
 
 ## Features
 
@@ -25,23 +25,23 @@ MuraPair is a currency converter application designed with a focus on visual aes
 ### Prerequisites
 
 - Node.js (Latest LTS version recommended)
-- npm or yarn
+- Yarn 1.22.22
 
 ### Installation
 
 1. Clone the repository
 2. Install dependencies:
-   npm install
+   yarn install
 
 ### Development
 
 Start the development server:
-npm run dev
+yarn dev
 
 ### Build
 
 Build the application for production:
-npm run build
+yarn build
 
 ## Project Structure
 
