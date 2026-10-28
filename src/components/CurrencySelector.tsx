@@ -349,7 +349,7 @@ export function CurrencySelector({ isOpen, onClose, type }: CurrencySelectorProp
                                         animate={{ opacity: 1 }}
                                         exit={{ opacity: 0 }}
                                         transition={{ duration: 0.2 }}
-                                        className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#111] to-transparent z-10 pointer-events-none hidden" // Hidden gradient as requested
+                                        className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#111] to-transparent z-10 pointer-events-none hidden"
                                     />
                                 )}
                             </AnimatePresence>

@@ -1,7 +1,21 @@
 {
   "name": "fluxpair",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Minimal currency converter for fiat and Bitcoin with live rates.",
+  "license": "MIT",
+  "author": {
+    "name": "Gustavo Soares",
+    "url": "https://gustasoares.com"
+  },
+  "homepage": "https://fluxpair.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hzguz/FluxPair.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hzguz/FluxPair/issues"
+  },
   "packageManager": "yarn@1.22.22",
   "type": "module",
   "scripts": {

@@ -18,8 +18,6 @@ function App() {
               <CurrencyConverter />
             </div>
           </main>
-
-          {/* Bottom Navigation Removed as requested */}
         </div>
       </CurrencyProvider>
     </LanguageProvider>

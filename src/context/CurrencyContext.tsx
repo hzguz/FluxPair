@@ -23,7 +23,7 @@ type AwesomeAPIResponse = Record<string, AwesomeAPIRate>;
 // Every rate is quoted against BRL, the API's native base.
 const RATE_CURRENCIES = ['USD', 'EUR', 'GBP', 'BTC', 'JPY', 'CAD', 'AUD', 'ARS', 'CNY', 'CHF'] as const;
 
-// Matches the API's 5-minute cache window; polling faster returns identical data.
+// Poll once a minute; polling is paused while the tab is hidden.
 const REFRESH_INTERVAL_MS = 60_000;
 
 // Approximate quotes used only until the first successful fetch, so the UI has

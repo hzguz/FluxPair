@@ -1,55 +1,71 @@
 # FluxPair
 
-FluxPair is a currency converter application designed with a focus on visual aesthetics and user experience. It allows users to convert between multiple fiat and crypto currencies using real-time exchange rates.
+A minimal, mobile-first currency converter for 10 fiat currencies and Bitcoin, with live rates, saved pairs and smooth animations.
+
+![FluxPair](public/banner-fluxpair.png)
 
 ## Features
 
-- Real-Time Conversion: Instant currency conversion using up-to-date exchange rates.
-- Multi-Currency Support: Supports a wide range of currencies including BRL, USD, EUR, GBP, BTC, and more.
-- Saved Pairs: Users can save frequently used currency pairs for quick access.
-- Smart Localization: Automatically detects user location to set the default language (English or Portuguese) and number formatting.
-- Interactive UI: Features a split-screen design with dynamic lighting effects and smooth animations.
-- Offline Capability: Caches exchange rates for offline usage.
+- **Live rates** from [AwesomeAPI](https://docs.awesomeapi.com.br/), refreshed every minute while the tab is visible
+- **11 currencies**: BRL, USD, EUR, GBP, JPY, CAD, AUD, ARS, CNY, CHF and Bitcoin (BTC)
+- **Swap** source and target in one tap
+- **Favorites and saved pairs**, stored in `localStorage` with your last active pair
+- **Startup fallback**: a built-in rate snapshot renders the UI until the first successful fetch (approximate, not live)
+- **English and Portuguese**, picked from your browser language, with locale-aware number formatting
+- **Animated numbers** and transitions with Framer Motion
+- Mobile-first layout with safe-area support
 
-## Tech Stack
+## Tech stack
 
-- Framework: React 19 (Vite)
-- Language: TypeScript
-- Styling: Tailwind CSS
-- Animation: Framer Motion
-- Icons: Lucide React
-- State Management: React Context API
+| Layer | Technology |
+| --- | --- |
+| UI | React 19 + TypeScript |
+| Build | Vite 7 |
+| Styling | Tailwind CSS 3, clsx + tailwind-merge |
+| Animation | Framer Motion |
+| Icons | Lucide React |
+| State | React Context |
+| Data | AwesomeAPI (rates), flagcdn.com (flags), Wikimedia Commons (BTC icon) |
 
-## Getting Started
+## Getting started
 
-### Prerequisites
+Requirements: Node.js 20+ (LTS) and Yarn 1.22.
 
-- Node.js (Latest LTS version recommended)
-- Yarn 1.22.22
-
-### Installation
-
-1. Clone the repository
-2. Install dependencies:
-   yarn install
-
-### Development
-
-Start the development server:
+```bash
+yarn install
 yarn dev
+```
 
-### Build
+| Script | What it does |
+| --- | --- |
+| `yarn dev` | Start the Vite dev server |
+| `yarn build` | Type-check and build for production |
+| `yarn preview` | Serve the production build locally |
+| `yarn lint` | Run ESLint |
 
-Build the application for production:
-yarn build
+No API key or `.env` is needed.
 
-## Project Structure
+## Project structure
 
-- /src/components: UI components (CurrencyCard, CurrencySelector, etc.)
-- /src/context: Global state management (CurrencyContext, LanguageContext)
-- /src/lib: Utility functions and constants
-- /public: Static assets
+```text
+src/
+  components/   CurrencyConverter, CurrencyCard, CurrencySelector, CurrencyIcon, MotionNumber
+  context/      CurrencyContext (rates, favorites, pairs), LanguageContext (en/pt)
+  lib/          Currency list and helpers
+public/         Favicon
+```
+
+## Disclaimer
+
+Rates are for reference only. Don't use them for financial transactions.
 
 ## License
 
-This project is open source and available under the MIT License.
+[MIT](LICENSE)
+
+## Author
+
+**Gustavo Soares**, designer and front-end developer at **GsStudio**
+
+- Portfolio: [gustasoares.com](https://gustasoares.com)
+- GitHub: [@hzguz](https://github.com/hzguz)
