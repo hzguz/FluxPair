@@ -62,10 +62,3 @@ Rates are for reference only. Don't use them for financial transactions.
 ## License
 
 [MIT](LICENSE)
-
-## Author
-
-**Gustavo Soares**, designer and front-end developer at **GsStudio**
-
-- Portfolio: [gustasoares.com](https://gustasoares.com)
-- GitHub: [@hzguz](https://github.com/hzguz)
